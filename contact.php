@@ -9,7 +9,7 @@
   $body = "Nombre: $nombre \nEmail: $email \nMensaje: $message";
   $headers = "From: no-reply@tedxtegucigalpa.org";
 
-  
+
   mail($to, $subject, $body, $headers);
 ?>
 <!DOCTYPE html>
@@ -42,11 +42,9 @@
 
             <div class="row-fluid">
                 <section class="span8" id="thankyou">
-                  <p>Gracias! <a href="index.html">Vuelve a TEDxTegucigalpa.</a></p>
+                  <p>¡Gracias por tu contacto! un miembre del equipo te responderá pronto.</p>
+                  <a href="index.html"><button class="btn">Vuelve a TEDxTegucigalpa.</button></a>
                 </section>
-
-                
-
 
             </div>
 
