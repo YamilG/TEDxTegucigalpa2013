@@ -91,23 +91,23 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" method="POST" action="contact.php">
                       <div class="control-group">
                         <label class="control-label" for="nombre">Nombre completo</label>
                         <div class="controls">
-                          <input type="text" id="nombre" placeholder="Nombre" class="span8">
+                          <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="span8">
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label" for="email">Correo Electrónico</label>
                         <div class="controls">
-                          <input type="password" id="email" placeholder="Correo Electrónico" class="span8">
+                          <input type="text" id="email" name="email" id="email" placeholder="Correo Electrónico" class="span8">
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label" for="message">Mensaje</label>
                         <div class="controls">
-                          <textarea id="message" placeholder="Mensaje" rows="4" class="span8"></textarea>
+                          <textarea id="message" name="message" placeholder="Mensaje" rows="4" class="span8"></textarea>
                         </div>
                       </div>
                       <div class="form-actions">
