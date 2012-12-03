@@ -1,0 +1,102 @@
+.container-fluid {
+    /* border:1px solid red; */
+}
+
+#encabezado {
+    border-bottom: 5px solid #ff2b06;
+    border-top: 10px solid #ededed;
+    height: 180px;
+}
+
+body {
+    font:lighter 16px/1.6em 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Crete Round", sans-serif;
+}
+
+hr {
+    width: 100%;
+    border:none;
+    border-bottom: 1px dotted #ff2b06;
+}
+
+.twitter-follow-button {
+    width: 285px;
+    margin: 15px auto;
+}
+
+header h1 {
+    text-align: center;
+    width: 267px;
+    height: 110px;
+    background: url("../images/tedxlogo.png");
+    text-indent: -9999px;
+    margin: 20px auto;
+}
+
+.btn-action {
+  color:white;
+    border-radius:10px;
+    cursor:pointer;
+      background-color: #ee432e;
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ee432e 0%, #ee432e 50%, #891100 100%);
+  background-image: -moz-linear-gradient(top, #ee432e 0%, #ee432e 50%, #891100 100%);
+  background-image: -ms-linear-gradient(top, #ee432e 0%, #ee432e 50%, #891100 100%);
+  background-image: -o-linear-gradient(top, #ee432e 0%, #ee432e 50%, #891100 100%);
+  background-image: linear-gradient(top, #ee432e 0%, #ee432e 50%, #891100 100%);
+  border: 1px solid #951100;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font: bold 20px "helvetica neue", helvetica, arial, sans-serif;
+  padding: 12px 0 14px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom:20px;
+}
+
+.img-polaroid {
+    margin-bottom: 8px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+ }
+
+ @media (min-width: 769px) {
+    .container-fluid {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #welcome button.btn-block {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .btn-block {
+        width: 270px;
+    }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
