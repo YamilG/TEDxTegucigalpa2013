@@ -76,6 +76,10 @@ a:hover {
   width: 100% !important;
 }
 
+#thankyou {
+  margin-top: 20px;
+}
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
