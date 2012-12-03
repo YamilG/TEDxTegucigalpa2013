@@ -1,5 +1,5 @@
 .container-fluid {
-    /* border:1px solid red; */
+    margin:0 auto;
 }
 
 #encabezado {
@@ -68,16 +68,23 @@ a:hover {
     text-decoration: none;
 }
 
+#fb-root {
+  display: none;
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
 
- }
+}
 
- @media (min-width: 769px) {
+@media (min-width: 769px) {
     .container-fluid {
         max-width: 900px;
-        margin: 0 auto;
     }
 
     #welcome button.btn-block {
@@ -88,11 +95,26 @@ a:hover {
     .btn-block {
         width: 270px;
     }
- }
+
+    .twitter-follow-button {
+        width: 250px;
+        margin: 15px auto;
+    }
+}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+    .container-fluid {
+        max-width: 880px;
+    }
 
+    .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+      width: 230px !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        letter-spacing: -2px;
+    }
 }
 
 /* Landscape phone to portrait tablet */
