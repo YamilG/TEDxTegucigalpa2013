@@ -10,10 +10,12 @@
 
 body {
     font:lighter 16px/1.6em 'Helvetica Neue', Helvetica, sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Crete Round", sans-serif;
+    color: #ee2531;
 }
 
 hr {
@@ -82,7 +84,16 @@ a:hover {
 
 /* Large desktop */
 @media (min-width: 1200px) {
+  body {
+    background-image: url(../images/big_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+  }
 
+  .container-fluid {
+    background: rgba(255,255,255,0.9);
+  }
 }
 
 @media (min-width: 769px) {
