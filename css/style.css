@@ -2,20 +2,33 @@
     margin:0 auto;
 }
 
-#encabezado {
-    border-bottom: 5px solid #ff2b06;
-    border-top: 10px solid #ededed;
-    height: 180px;
-}
-
 body {
     font:lighter 16px/1.6em 'Helvetica Neue', Helvetica, sans-serif;
-
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Crete Round", sans-serif;
+.details {
+  font-size: 13px;
+  color: #c9c9c9;
+  text-align: right;
+  margin-top: -100px;
+  padding-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, .details strong {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     color: #ee2531;
+}
+
+h2 span, h3 span {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 18px;
 }
 
 hr {
@@ -34,7 +47,7 @@ header h1 {
     height: 110px;
     background: url("../images/tedxlogo.png");
     text-indent: -9999px;
-    margin: 20px auto;
+    margin: 30px 0;
 }
 
 .btn-action {
@@ -54,7 +67,7 @@ header h1 {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  font: bold 20px "helvetica neue", helvetica, arial, sans-serif;
+  font: bold 20px 'Open Sans', helvetica, arial, sans-serif;
   padding: 12px 0 14px 0;
   text-align: center;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
@@ -81,6 +94,16 @@ a:hover {
   margin-top: 20px;
 }
 
+strong {
+  text-align: center;
+}
+
+#encabezado {
+  border-top: 10px solid #ededed;
+  height: 150px;
+  background: white;
+  border-bottom: 5px solid #ff2b06;
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -97,17 +120,65 @@ a:hover {
 }
 
 @media (min-width: 769px) {
+
+    body {
+      background-image: url(../images/big_bg.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-attachment: fixed;
+    }
+
+    #intro, #about p {
+      -moz-column-count:2; /* Firefox */
+      -webkit-column-count:2; /* Safari and Chrome */
+      column-count:2;
+      color: #444;
+    }
+
+    .container-fluid {
+      background: rgba(255,255,255,0.9);
+      -webkit-box-shadow:  1px 1px 15px 1px rgba(0, 0, 0, 0.5);
+      box-shadow:  1px 1px 15px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    #encabezado {
+      border-top: 10px solid #ededed;
+      height: 180px;
+      background: white;
+      margin-bottom: 30px;
+      border-bottom: none;
+    }
+
+    nav {
+      margin-top: 180px;
+      height: 5px;
+      background-color: #444;
+      border-bottom: 5px solid #ff2b06;
+    }
+
     .container-fluid {
         max-width: 900px;
     }
 
     #welcome button.btn-block {
-        width: 250px;
+        width: 290px;
         margin: 0 auto;
+        margin-bottom: 20px;
+        float: left;
     }
 
     .btn-block {
-        width: 270px;
+      width: 270px;
+    }
+
+    .btn1 {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .btn2 {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
 
     .twitter-follow-button {

@@ -11,7 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
+
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
@@ -20,29 +22,43 @@
 
         <div class="container-fluid">
 
+
             <div class="row-fluid">
                 <header class="span12" id="encabezado">
                     <h1>TEDxTegucigalpa</h1>
+
+                    <div class="details pull-right hidden-phone">
+                      <p><strong>26 de Julio / Auditorio del B.C.I.E.</strong><br> Tegucigalpa, Honduras</p>
+                    </div>
                 </header>
+                <nav></nav>
             </div>
 
             <div class="row-fluid">
                 <section class="span8" id="welcome">
-                    <h2>¡Bienvenido de nuevo!</h2>
-                    <p class="lead">TEDxTegucigalpa es una conferencia en la que personas se reunen para compartir ideas valiosas, ideas que están teniendo un impacto en nuestro mundo.</p>
+                    <h2>¡Bienvenido <span>de</span> nuevo!</h2>
 
+
+                    <p class="lead">TEDxTegucigalpa es una conferencia en la que personas se reunen para compartir ideas valiosas, ideas que están teniendo un impacto en nuestro mundo.</p>
+                    <div id="intro" class="hidden-phone">
                     <p>Con el espíritu de difundir ideas valiosas, <a href="http://ted.com">TED</a> ha creado un programa llamado <a href="http://www.ted.com/tedx">TEDx</a>. TEDx es un programa de eventos locales auto-organizados que unen a las personas para compartir experiencias al estilo TED. Nuestro evento se llama TEDxTegucigalpa, donde x= evento TED organizado de forma independiente. En nuestro evento TEDxTegucigalpa, videos de presentaciones anteriores (TEDTalks) y conferencistas invitados, se combinaran para originar profundos debates y la interconexión entre un selecto grupo de asistentes.</p>
 
                     <p>La conferencia TED provee una guía general para el programa TEDx, pero los eventos TEDx individuales, incluyendo el nuestro, es organizado de forma independiente.</p>
 
-                    <p><strong>¿Te gustaría ser parte del equipo organizador?</strong></p>
+                    </div>
+
+                    <div class="actions">
+                        <p><strong>¿Te gustaría ser parte del equipo organizador o conoces a alguien que sería un buen expositor en este evento?</strong></p>
+
+                        <a href="https://docs.google.com/spreadsheet/viewform?formkey=dDlDUWprajFhQVFFWi1jVTZ1a3UwOVE6MQ"><button class="btn-block btn-action btn1">Únete al equipo</button></a>
+                        <a href="http://goo.gl/dW5Yz"><button class="btn-block btn-action btn2">Postula un expositor</button></a>
+                    </div>
 
 
-                    <a href="https://docs.google.com/spreadsheet/viewform?formkey=dDlDUWprajFhQVFFWi1jVTZ1a3UwOVE6MQ"><button class="btn-block btn-action">Únete al equipo</button></a>
 
                     <hr>
 
-                    <h3>Revive TEDxTegucigalpa 2012</h3>
+                    <h3><span>Revive</span> TEDxTegucigalpa 2012</h3>
 
                     <p>Los hondureños ya demostramos que tenemos ideas valiosas que compartir; revive TEDxTegucigalpa 2012.</p>
 
@@ -82,7 +98,7 @@
 
             <div class="row-fluid" id="about">
                    <section class="span8">
-                    <h3>TEDx, x=evento organizado de forma independiente</h3>
+                    <h3>TEDx <span>x=evento organizado de forma independiente</span></h3>
                     <p>Con el espíritu de difundir ideas valiosas, <strong>TEDx</strong> es un programa de eventos locales, organizados de forma individual que unen a las personas para compartir una experiencia al estilo TED. En un evento TEDx, videos de presentaciones anteriores (TEDTalks) y conferencistas invitados, se combinaran para originar profundos debates y la interconexión entre un selecto grupo de asistentes. Estos eventos locales organizados de forma independiente se realizan bajo el nombre TEDx, donde x=evento organizado de forma independiente.</p>
 <hr>
                    </section>
